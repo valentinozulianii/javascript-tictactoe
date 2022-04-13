@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gioca a tris!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="game_name"><h1>Tris</h1></div>
+      <div class="game_grid">
+        <div class="row">
+          <div class="cell unclicked" data-row="1" data-column="1"></div>
+          <div class="cell unclicked" data-row="1" data-column="2"></div>
+          <div class="cell unclicked" data-row="1" data-column="3"></div>
+        </div>
+        <div class="row">
+          <div class="cell unclicked" data-row="2" data-column="1"></div>
+          <div class="cell unclicked" data-row="2" data-column="2"></div>
+          <div class="cell unclicked" data-row="2" data-column="3"></div>
+        </div>
+        <div class="row">
+          <div class="cell unclicked" data-row="3" data-column="1"></div>
+          <div class="cell unclicked" data-row="3" data-column="2"></div>
+          <div class="cell unclicked" data-row="3" data-column="3"></div>
+        </div>
+      </div>
+      <div class="game_status__container">
+        <p class="game_status">
+          In attesa della mossa di <span class="player"></span>
+        </p>
+        <p class="game_over hidden">Game Over ❌</p>
+        <p class="player_o_wins hidden">Ha vinto O 🎉</p>
+        <!-- O -->
+        <p class="player_x_wins hidden">Ha vinto X 🎉</p>
+        <!-- X -->
+        <button class="reset">Ricomincia</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
